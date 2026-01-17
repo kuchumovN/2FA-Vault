@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2FA Vault</title>
+  <style>
+    :root {
+      --bg: #c7c8ca;
+      --panel: #b9bbc0;
+      --panel-dark: #a1a4aa;
+      --panel-light: #bfc2c7;
+      --line: #6b6c70;
+      --text: #121417;
+      --muted: #404349;
+      --accent: #0f4976;
+      --accent-alt: #2d3741;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .frame {
+      max-width: 980px;
+      margin: 40px auto;
+      padding: 0 16px 60px;
+    }
+    .panel {
+      background: var(--panel-light);
+      border: 1px solid var(--line);
+      padding: 24px;
+    }
+    .header {
+      background: var(--panel-dark);
+      border: 1px solid var(--line);
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+    .title {
+      font-size: 14px;
+      letter-spacing: 1.8px;
+      font-weight: 700;
+    }
+    .badge {
+      border: 1px solid var(--line);
+      padding: 6px 10px;
+      font-size: 11px;
+      letter-spacing: 1px;
+      background: var(--panel-light);
+      color: var(--muted);
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 20px;
+    }
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: 32px;
+      letter-spacing: 0.4px;
+    }
+    .hero p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .cta {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 10px 16px;
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      border: 1px solid var(--line);
+    }
+    .card {
+      border: 1px solid var(--line);
+      background: #d1d3d7;
+      padding: 16px;
+    }
+    .grid {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    .grid h3 {
+      margin: 0 0 8px;
+      font-size: 12px;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .grid p {
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .footer {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .links a {
+      color: var(--accent-alt);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(45,55,65,0.35);
+      margin-right: 12px;
+    }
+    @media (max-width: 860px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <div class="header">
+      <div class="title">2FA VAULT</div>
+      <div class="badge">iOS AUTHENTICATOR</div>
+    </div>
+
+    <div class="panel hero">
+      <div>
+        <h1>Industrial‑clean 2FA, built for focus.</h1>
+        <p>2FA Vault keeps your one‑time passwords fast, offline, and readable. Scan QR codes, favorite accounts, and back up your vault with one tap.</p>
+        <a class="cta" href="privacy.html">Privacy Policy</a>
+      </div>
+      <div class="card">
+        <h3>Core Features</h3>
+        <p>QR scanning · Manual input · Favorites · Sorting · Face ID · iCloud Drive backup</p>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Fast Setup</h3>
+        <p>Scan a QR or enter a secret manually. Codes appear instantly with a clear time indicator.</p>
+      </div>
+      <div class="card">
+        <h3>Offline by Default</h3>
+        <p>Secrets live in iOS Keychain. No accounts, no servers, no tracking of your codes.</p>
+      </div>
+      <div class="card">
+        <h3>Backup Ready</h3>
+        <p>Export JSON or save to iCloud Drive so you can recover your vault anytime.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>Support: 2fa.vault.help@gmail.com</div>
+      <div class="links">
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
